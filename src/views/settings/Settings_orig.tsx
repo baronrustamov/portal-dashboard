@@ -92,7 +92,6 @@ const Settings: React.FC = () => {
 
         <Persist />
 
-      /*
         <div style={{ textAlign: "center" }} className="Widget">
           <h4>Support Tabliss</h4>
           <p>
@@ -137,7 +136,7 @@ const Settings: React.FC = () => {
         />
       </div>
     </div>
-    */.
+
 
   );
 };
