@@ -91,7 +91,7 @@ const Settings: React.FC = () => {
         </p>
 
         <Persist />
-
+      </div>
     </div>
 
   );
