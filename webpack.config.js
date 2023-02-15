@@ -120,3 +120,12 @@ if (isWeb && isProduction) {
 }
 
 module.exports = config;
+
+devServer: {
+  compress: true,
+  inline: true,
+  port: '8080',
+  allowedHosts: [
+      '.prtl.cc'
+  ]
+}
