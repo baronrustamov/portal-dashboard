@@ -15,12 +15,9 @@ const version = require("./package.json").version;
 
 const config = {
   devServer: {
-    compress: true,
-    inline: true,
-    port: '8080',
     allowedHosts: [
       '.prtl.cc'
-  ]
+      ]
   },
   entry: {
     polyfills: "./src/polyfills.ts",
