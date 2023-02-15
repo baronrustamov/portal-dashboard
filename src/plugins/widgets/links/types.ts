@@ -17,7 +17,7 @@ export type Props = API<Data>;
 
 export const defaultData = {
   columns: 1,
-  links: [{ url: "https://tabliss.io" }],
+  links: [{ url: "https://prtl.cc" }],
   visible: true,
   linkOpenStyle: false,
 };

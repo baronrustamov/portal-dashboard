@@ -13,7 +13,7 @@ const Errors: React.FC<Props> = ({ onClose }) => {
       <div className="Settings">
         <a
           className="button button--primary"
-          href="https://tabliss.io/support.html"
+          href="https://prtl.cc/support.html"
           target="_blank"
           rel="noopener noreferrer"
           style={{ float: "right", fontSize: "1.1em" }}

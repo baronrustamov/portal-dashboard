@@ -106,7 +106,7 @@ const Settings: React.FC = () => {
             </a>
           </p>
           <p>
-            <a href="https://tabliss.io/" target="_blank">
+            <a href="https://prtl.cc/" target="_blank">
               <Icon name="globe" /> Website
             </a>
             &nbsp;&nbsp;

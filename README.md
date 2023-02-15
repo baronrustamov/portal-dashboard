@@ -4,7 +4,7 @@
 
 ![Tabliss Screenshot](screenshot.png)
 
-<p align="center"><a href="https://tabliss.io">https://tabliss.io</a></p>
+<p align="center"><a href="https://prtl.cc">https://prtl.cc</a></p>
 
 ## Usage
 
