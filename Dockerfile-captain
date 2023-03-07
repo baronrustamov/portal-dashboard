@@ -1,9 +1,7 @@
 FROM node:18-alpine
-ENV NODE_ENV=production
 WORKDIR /usr/src/app
 RUN apk add --no-cache git npm
 RUN git clone https://github.com/baronrustamov/portal-dashboard.git .
-RUN npm install -g yarn
-RUN yarn install
+RUN npm install
 EXPOSE 8080
-CMD [ "yarn run", "dev" ]
+CMD [ "npm start", "dev" ]
