@@ -1,6 +1,5 @@
 # build environment
 FROM node:latest as builder
-ENV NODE_ENV
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
@@ -10,7 +9,7 @@ RUN git clone https://github.com/baronrustamov/portal-dashboard .
 RUN yarn install
 # RUN npm install
 # RUN npm run build
-RUN yarn run build dev
+RUN yarn run build 
 
 # production environment
 FROM nginx:latest
