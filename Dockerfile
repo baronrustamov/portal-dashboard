@@ -9,12 +9,16 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
+RUN apk add --no-cache git
+
+RUN git clone https://github.com/baronrustamov/portal-dashboard.git .
+
 RUN yarn install
 # If you are building your code for production
 # RUN npm ci --only=production
 
 # Bundle app source
-COPY . .
+# COPY . .
 
 EXPOSE 8080
 CMD [ "yarn run", "dev" ]
