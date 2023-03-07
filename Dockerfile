@@ -36,8 +36,11 @@ RUN git clone https://github.com/baronrustamov/portal-dashboard.git .
 # EXPOSE 8080
 RUN yarn install
 
-RUN apt-get clean -y && rm -rf /tmp/* /var/tmp/* /var/lib/apt/archive/* /var/lib/apt/lists/*
+# RUN apt-get clean -y && rm -rf /tmp/* /var/tmp/* /var/lib/apt/archive/* /var/lib/apt/lists/*
 
-EXPOSE 3000
+#EXPOSE 3000
+ENV NODE_ENV production
+ENV PORT 80
+EXPOSE 80
 #CMD [ "npm start", "dev" ]
 CMD [ "yarn run", "dev" ]
