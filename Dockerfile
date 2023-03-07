@@ -6,10 +6,11 @@ ENV PATH /usr/src/app/node_modules/.bin:$PATH
 # COPY . /usr/src/app
 RUN npm install -g git
 RUN git clone https://github.com/baronrustamov/portal-dashboard .
-RUN yarn install
-# RUN npm install
-# RUN npm run build
-RUN yarn run build 
+RUN npm install
+RUN npm run build
+
+# RUN yarn install
+# RUN yarn run build 
 
 # production environment
 FROM nginx:latest
