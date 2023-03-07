@@ -1,15 +1,16 @@
 # build environment
 FROM node:latest as builder
+ENV NODE_ENV
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 # COPY . /usr/src/app
 RUN npm install -g git
-RUN git clone git@github.com:baronrustamov/portal-dashboard.git .
+RUN git clone https://github.com/baronrustamov/portal-dashboard .
 RUN yarn install
 # RUN npm install
 # RUN npm run build
-RUN yarn run build
+RUN yarn run build dev
 
 # production environment
 FROM nginx:latest

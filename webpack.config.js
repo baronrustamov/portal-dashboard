@@ -14,11 +14,6 @@ const isWeb = buildTarget === "web";
 const version = require("./package.json").version;
 
 const config = {
-  devServer: {
-    allowedHosts: [
-      '.prtl.cc'
-      ]
-  },
   entry: {
     polyfills: "./src/polyfills.ts",
     main: ["normalize.css", "./src/styles.sass", "./src/main.tsx"],
