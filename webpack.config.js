@@ -92,7 +92,6 @@ if (isProduction) {
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false,
-      allowedHosts: "all",
       public: 'i.prtl.cc'
     }),
   );
@@ -102,7 +101,6 @@ if (!isWeb) {
   config.plugins.push(
     new webpack.ProvidePlugin({
       browser: "webextension-polyfill",
-      allowedHosts: "all",
       public: 'i.prtl.cc'
     }),
   );
@@ -113,7 +111,6 @@ if (isWeb && isProduction) {
     new workbox.GenerateSW({
       cacheId: "tabliss-cache",
       dontCacheBustURLsMatching: /\.\w{12}\./,
-      allowedHosts: "all",
       public: 'i.prtl.cc'
     }),
   );
