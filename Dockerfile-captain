@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node
 WORKDIR /usr/src/app
 RUN apk add --no-cache git npm
 RUN git clone https://github.com/baronrustamov/portal-dashboard.git .
