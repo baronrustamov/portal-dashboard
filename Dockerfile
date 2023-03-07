@@ -4,9 +4,10 @@ RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 # COPY . /usr/src/app
-RUN npm install -g git
+RUN npm install -g git n
 RUN git clone https://github.com/baronrustamov/portal-dashboard .
-RUN npm install
+RUN n latest
+RUN npm install --force
 RUN npm run build
 
 # RUN yarn install
